@@ -59,6 +59,7 @@ services:
     read_only: true
     tmpfs:
       - /tmp
+      - /var/tmp
     volumes:
       - ./secrets/config/mattermost:/mattermost/config
       - mattermost_db:/mattermost/db
